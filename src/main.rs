@@ -8,8 +8,8 @@ mod graphic;
 use graphic::Color;
 
 fn main() {
-  println!("hello world!");
-  println!("hello world!");
-  println!("hello world!");
-  println!("hello world!");
+  println!("hello 1!");
+  println!("hello 2!");
+  println!("hello 3!");
+  println!("hello 4!");
 }
