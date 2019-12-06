@@ -2,41 +2,15 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "lldb",
+      "name": "Debug",
+      "type": "cppvsdbg",
       "request": "launch",
-      "name": "Debug executable 'project_f'",
-      "cargo": {
-        "args": [
-          "build",
-          "--bin=project_f",
-          "--package=project_f"
-        ],
-        "filter": {
-          "name": "project_f",
-          "kind": "bin"
-        }
-      },
+      "program": "${workspaceFolder}/target/debug/project_f.exe",
       "args": [],
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "type": "lldb",
-      "request": "launch",
-      "name": "Debug unit tests in executable 'project_f'",
-      "cargo": {
-        "args": [
-          "test",
-          "--no-run",
-          "--bin=project_f",
-          "--package=project_f"
-        ],
-        "filter": {
-          "name": "project_f",
-          "kind": "bin"
-        }
-      },
-      "args": [],
-      "cwd": "${workspaceFolder}"
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "internalConsoleOptions": "openOnSessionStart"
     }
   ]
 }
